@@ -1,0 +1,3 @@
+ghdl -a ./vhdl/*.vhd
+ghdl -e testbench_FFT
+ghdl -r testbench_FFT --vcd=FFT.vcd 
