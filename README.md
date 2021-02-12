@@ -76,7 +76,7 @@ Has to be done. (Some problem converting vhdl to verilog)
 
 If you can convert them, all verilog files the synthesys can be done with ```yosys```.
 
-The target FPGA platform can be choosed with ```yosys``` with the commmand: ```synth\_<target_name>```.
+The target FPGA platform can be choosed with ```yosys``` with the commmand: ```synth_<target_name>```.
 
 ### Place & Route 
 
