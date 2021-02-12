@@ -1,7 +1,11 @@
 # FFT Hardware Accelerator
+
 The FFT algorithm make possible to speed up the DFT.
 
+$ X_n(k) = \sum_{n=0}^{N-1} x(n) e^-j\frac{2\pi}{N}n $
+
 ## Algorithm
+
 <b>Cooley-Tukey</b>
 
 ## Datapath
@@ -33,6 +37,7 @@ If you can convert them, all verilog files the synthesys can be done with <b>YOS
 The target FPGA platform can be choosed with <b>YOSYS</b> with the commmand: 'synth\_<target_name>'.
 
 ## Place & Route 
+
 Has to be done.
 
 Using <b>NEXTPNR</b>
