@@ -62,7 +62,7 @@ The simulation can be seen running ```gtkwave FFT.vcd```.
 
 ### Compile the design
 
-Running ```tb\_script``` , all files will be analyzed using <b>GHDL</b>.
+Running ```tb_script``` file , all files will be analyzed using <b>GHDL</b>.
 
 By default a <b>vcd</b> file named 'FFT.vcd' will be created.
 
