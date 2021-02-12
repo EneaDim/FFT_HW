@@ -62,7 +62,7 @@ The simulation can be seen running ```gtkwave FFT.vcd```.
 
 ### Compile the design
 
-Running 'tb\_script' , all files will be analyzed using <b>GHDL</b>.
+Running ```tb\_script``` , all files will be analyzed using <b>GHDL</b>.
 
 By default a <b>vcd</b> file named 'FFT.vcd' will be created.
 
@@ -74,7 +74,7 @@ Has to be done. (Some problem converting vhdl to verilog)
 
 If you can convert them, all verilog files the synthesys can be done with <b>YOSYS</b>.
 
-The target FPGA platform can be choosed with <b>YOSYS</b> with the commmand: 'synth\_<target_name>'.
+The target FPGA platform can be choosed with <b>YOSYS</b> with the commmand: ```synth\_<target_name>```.
 
 ### Place & Route 
 
