@@ -76,7 +76,7 @@ You can see the simulation running again ```gtkwave FFT.vcd```.
 
 Has to be done. (Some problem converting vhdl to verilog)
 
-If you can convert them, all verilog files the synthesys can be done with ```yosys```.
+If you can convert them, the synthesys can be done with ```yosys```, reading all verilog files.
 
 The target FPGA platform can be choosed with ```yosys``` with the commmand: ```synth_<target_name>```.
 
