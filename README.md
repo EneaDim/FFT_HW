@@ -50,6 +50,8 @@ The idea is to implement this algorithm in hardware. The main components are:
 
 Walkthrough <https://github.com/YosysHQ/yosys>
 
+Walkthrough to convert vhdl into verilog files <https://github.com/ldoolitt/vhd2vl> (needed for synthesys with yosys)
+
 ### Requirements to Place&Route
 
 Walkthrough <https://github.com/YosysHQ/nextpnr>
@@ -62,7 +64,7 @@ The simulation can be seen running ```gtkwave FFT.vcd```.
 
 ### Compile the design
 
-Running ```tb_script``` file , all files will be analyzed using <b>GHDL</b>.
+Running ```tb_script``` file , all files will be analyzed using ```ghdl```.
 
 By default a <b>vcd</b> file named 'FFT.vcd' will be created.
 
@@ -72,12 +74,12 @@ You can see the simulation running again ```gtkwave FFT.vcd```.
 
 Has to be done. (Some problem converting vhdl to verilog)
 
-If you can convert them, all verilog files the synthesys can be done with <b>YOSYS</b>.
+If you can convert them, all verilog files the synthesys can be done with ```yosys```.
 
-The target FPGA platform can be choosed with <b>YOSYS</b> with the commmand: ```synth\_<target_name>```.
+The target FPGA platform can be choosed with ```yosys``` with the commmand: ```synth\_<target_name>```.
 
 ### Place & Route 
 
 Has to be done.
 
-Using <b>NEXTPNR</b>
+Using ```nextpnr```.
