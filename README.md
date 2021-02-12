@@ -10,7 +10,7 @@ DFT:
 
 <b>Cooley-Tukey</b>
 
-The Cooley-Turkey algorithm is the most famous FFt algorithm. It breaks the DFT into smaller DFT's.
+The Cooley-Turkey algorithm is the most famous FFT algorithm. It breaks the DFT into smaller DFT's.
 The computational complexity is reduced from O(N^2) to O(N logN).
 
 This implementation is a simple <b>radix-2</b> DIT (decimation in time) FFT:
