@@ -44,7 +44,7 @@ The idea is to implement this algorithm in hardware. The main components are:
 
 ### Requirements to Compile and Simulate
 
-sudo apt-get install ghdl gtkwave
+```sudo apt-get install ghdl gtkwave```
 
 ### Requirements to Synthetize
 
@@ -58,7 +58,7 @@ Walkthrough <https://github.com/YosysHQ/nextpnr>
 
 The 'testbench_FFT.vhd' is the default testbench.
 
-The simulation can be seen running gtkwave FFT.vcd.
+The simulation can be seen running ```gtkwave FFT.vcd```.
 
 ### Compile the design
 
@@ -66,7 +66,7 @@ Running 'tb\_script' , all files will be analyzed using <b>GHDL</b>.
 
 By default a <b>vcd</b> file named 'FFT.vcd' will be created.
 
-You can see the simulation running again gtkwave FFT.vcd.
+You can see the simulation running again ```gtkwave FFT.vcd```.
 
 ### Synthesis
 
