@@ -30,27 +30,43 @@ For more information you can take a look at <https://en.wikipedia.org/wiki/Coole
 
 The idea is to implement this algorithm in hardware. The main components are:
 
-### Datapath
+#### Datapath
 
 - Multiplier
 - Adder-Subtractor
 - Registers
 
-### Control Unit
+#### Control Unit
 
 - Microprogrammed CU
 
-## Simulation
+### Requirements to Compile and Simulate
 
-Running 'tb\_script' , all files will be analyzed using <b>GHDL</b>.
+sudo apt-get install ghdl gtkwave
+
+### Requirements to Synthetize
+
+Walkthrough <https://github.com/YosysHQ/yosys>
+
+### Requirements to Place&Route
+
+Walkthrough <https://github.com/YosysHQ/nextpnr>
+
+### Simulation
 
 The 'testbench_FFT.vhd' is the default testbench.
 
-The output of the simulation is the 'FFT.vcd' file.
+The simulation can be seen running gtkwave FFT.vcd.
 
-This simulation can be seen using <b>GTKWAVE</b>.
+### Compile the design
 
-## Synthesis
+Running 'tb\_script' , all files will be analyzed using <b>GHDL</b>.
+
+By default a <b>vcd</b> file named 'FFT.vcd' will be created.
+
+You can see the simulation running again gtkwave FFT.vcd.
+
+### Synthesis
 
 Has to be done. (Some problem converting vhdl to verilog)
 
@@ -58,7 +74,7 @@ If you can convert them, all verilog files the synthesys can be done with <b>YOS
 
 The target FPGA platform can be choosed with <b>YOSYS</b> with the commmand: 'synth\_<target_name>'.
 
-## Place & Route 
+### Place & Route 
 
 Has to be done.
 
