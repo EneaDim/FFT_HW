@@ -22,7 +22,9 @@ Thanks to the periodicity of the complex exponential, is possible to rewrite X(k
 <img src="https://render.githubusercontent.com/render/math?math=X(k)=\large%20\sum_{n=0}^{\frac{N}{2}-1}x(2n)e^{-j\frac{2\pi}{\frac{N}{2}}(2n)k}%2Be^{-j\frac{2\pi}{N}nk}O_k">
 <img src="https://render.githubusercontent.com/render/math?math=X(k%2B\frac{N}{2})=\large%20\sum_{n=0}^{\frac{N}{2}-1}x(2n)e^{-j\frac{2\pi}{\frac{N}{2}}(2n)k}-e^{-j\frac{2\pi}{N}nk}O_k">
 
-Where <img src="https://render.githubusercontent.com/render/math?math=O_k=\large%20\sum_{n=0}^{\frac{N}{2}-1}x(2n%2B1)e^{-j\frac{2\pi}{\frac{N}{2}}nk}"> 
+Where 
+
+<img src="https://render.githubusercontent.com/render/math?math=O_k=\large%20\sum_{n=0}^{\frac{N}{2}-1}x(2n%2B1)e^{-j\frac{2\pi}{\frac{N}{2}}nk}"> 
 
 For more information you can take a look at <https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm>
 
