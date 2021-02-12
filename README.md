@@ -32,13 +32,15 @@ The idea is to implement this algorithm in hardware. The main components are:
 
 #### Datapath
 
-- Multiplier
-- Adder-Subtractor
+- Multipliers
+- Adder-Subtractors
 - Registers
 
 #### Control Unit
 
 - Microprogrammed CU
+
+<img src="https://github.com/EneaDim/FFT_HW/blob/main/uPCU.png">
 
 ### Requirements to Compile and Simulate
 
