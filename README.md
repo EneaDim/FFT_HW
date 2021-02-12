@@ -2,8 +2,6 @@
 
 The FFT algorithm make possible to speed up the DFT.
 
-$ X_n(k) = \sum_{n=0}^{N-1} x(n) e^-j\frac{2\pi}{N}n $
-
 ## Algorithm
 
 <b>Cooley-Tukey</b>
