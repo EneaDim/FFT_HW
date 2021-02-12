@@ -2,17 +2,41 @@
 
 The FFT algorithm make possible to speed up the DFT.
 
+DFT:
+
+<img src="https://render.githubusercontent.com/render/math?math=\huge%20X(k)%20=%20\sum_{n=0}^{N-1}x(n)%20e^{-j\frac{2\pi}{N}nk}">
+
 ## Algorithm
 
 <b>Cooley-Tukey</b>
 
-## Datapath
+The Cooley-Turkey algorithm is the most famous FFt algorithm. It breaks the DFT into smaller DFT's.
+The computational complexity is reduced from O(N^2) to O(N logN).
+
+This implementation is a simple <b>radix-2</b> DIT (decimation in time) FFT:
+
+<img src="https://render.githubusercontent.com/render/math?math=\huge%20X(k)=\sum_{n=0}^{\frac{N}{2}-1}x(2n)e^{-j\frac{2\pi}{\frac{N}{2}}(2n)k}%2B\sum_{n=0}^{\frac{N}{2}-1}x(2n%2B1)%20e^{-j\frac{2\pi}{\frac{N}{2}}(2n%2B1)k}">
+
+Thanks to the periodicity of the complex exponential, is possible to rewrite X(k) as following:
+
+<img src="https://render.githubusercontent.com/render/math?math=X(k)=\large%20\sum_{n=0}^{\frac{N}{2}-1}x(2n)e^{-j\frac{2\pi}{\frac{N}{2}}(2n)k}%2Be^{-j\frac{2\pi}{N}nk}O_k">
+<img src="https://render.githubusercontent.com/render/math?math=X(k+\frac{N}{2})=\large%20\sum_{n=0}^{\frac{N}{2}-1}x(2n)e^{-j\frac{2\pi}{\frac{N}{2}}(2n)k}-e^{-j\frac{2\pi}{N}nk}O_k">
+
+Where <img src="https://render.githubusercontent.com/render/math?math=O_k=\large%20\sum{n=0}^{\frac{N}{2}-1}x(2n%2B1)e^{-j\frac{2\pi}{\frac{N}{2}}nk}"> 
+
+For more information you can take a look at <https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm>
+
+## Hardware Design
+
+The idea is to implement this algorithm in hardware. The main components are:
+
+### Datapath
 
 - Multiplier
 - Adder-Subtractor
-- RegisterFile
+- Registers
 
-## Control Unit
+### Control Unit
 
 - Microprogrammed CU
 
