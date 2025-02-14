@@ -15,7 +15,7 @@ The computational complexity is reduced from O(N^2) to O(N logN).
 
 This implementation is a simple <b>radix-2</b> DIT (decimation in time) FFT:
 
-<img src="https://render.githubusercontent.com/render/math?math=\huge%20X(k)=\sum_{n=0}^{\frac{N}{2}-1}x(2n)e^{-j\frac{2\pi}{\frac{N}{2}}(2n)k}%2B\sum_{n=0}^{\frac{N}{2}-1}x(2n%2B1)%20e^{-j\frac{2\pi}{\frac{N}{2}}(2n%2B1)k}">
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;X(k)=\sum_{n=0}^{\frac{N}{2}-1}x(2n)e^{-j\frac{2\pi}{\frac{N}{2}}(2n)k}%2B\sum_{n=0}^{\frac{N}{2}-1}x(2n%2B1)%20e^{-j\frac{2\pi}{\frac{N}{2}}(2n%2B1)k}">
 
 Thanks to the periodicity of the complex exponential, is possible to rewrite X(k) as following:
 
